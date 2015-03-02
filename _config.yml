@@ -1,0 +1,34 @@
+exclude:        ['README.md', '_jekyll_s3.yml', 's3_website.yml', 'Gemfile', 'Gemfile.lock', 'readme.md', 'minify.sh']
+markdown:       rdiscount
+highlighter:    null
+permalink:      /blog/:title
+
+name:           Andrew Hess
+url:            http://www.andhess.com
+description:    Out for a Hamiltonian walk
+copyright:      All rights reserved.
+email:          hello@andhess.com
+twitter:        andhess
+assets:
+    dirname: assets
+    baseurl: /assets/
+    css_compressor: yui
+    js_compressor: yui
+    sources:
+        - _assets/javascripts
+        - _assets/stylesheets
+        - _assets/images
+    cachebust: none
+    cache: false
+    debug: true
+
+# Files in this repo that we don't want to go to the web
+exclude: [
+  'scss',
+  '*.rb',
+  '*.yml', 
+  'vendor', 
+  'Gemfile', 
+  'Gemfile.lock',
+  '*.sh',
+]

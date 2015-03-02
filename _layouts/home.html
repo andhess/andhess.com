@@ -1,0 +1,68 @@
+---
+layout: main
+---
+
+{% if page.content %}
+    {{ content }}
+{% endif %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="header intro">
+            <h1> {{site.name}}</h1>
+        </div>
+        <div class="profile">
+            {% image profile.jpg %}
+        </div>
+        <div class="about">
+            <p>Originally from Detroit, I currently live in San Francisco. I work at <a href="https://www.opendns.com/">OpenDNS</a> on the Research Systems team where I play with graph databases and quantify our security intelligence. In 2013, I graduated from <a href="http://wustl.edu/">Washington University in St. Louis</a> with majors in Systems Engineering and Electrical Engineering. Additionally, I manage the <a href="http://www.meetup.com/openlate">OpenLate Meetup Group</a> and build <a href="https://www.staffjoy.com/">StaffJoy</a>; a tool that makes teams more efficient by automating shift scheduling and management. In my spare time, I <a href="/assets/bike.jpg">cycle</a>, <a href="/assets/ski.jpg">ski</a>, <a href="/assets/hike.jpg">hike</a>, and <a href="https://www.goodreads.com/andhess">read</a>.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="header">
+            <h2>Work and Projects</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="activities">
+            <div class="col-sm-4">
+                <h3 class="header">OpenDNS</h3>
+                <div class="logo">
+                    {% image opendns.png %}
+                </div>
+                <p><a href="https://www.opendns.com/">OpenDNS</a> provides cloud-delivered network security for any device, anywhere. On the Research Systems team, I am currently building out a graph database to record, analyze, and enforce all security-related events. This system will also be used to improve the efficacy and velocity of our researchers. Common tools include Python, Java, HBase, and Kafka.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="header">OpenLate</h3>
+                <div class="logo">
+                    {% image openlate.jpg %}
+                </div>
+                <p><a href="http://www.meetup.com/openlate">OpenLate</a> is an engineering meetup group that I run in partnership with OpenDNS. Events are held biweekly and feature a talk held by a technical thought leader. In its first year, I helped grow OpenLate to over 1,000 members, which also resulted in 3 technical hires and over $100K worth of deals.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="header">StaffJoy</h3>
+                <div class="logo">
+                    {% image staffjoy.png %}
+                </div>
+                <p><a href="https://www.staffjoy.com">StaffJoy</a> is an application I am building that aims to makes teams more efficient by automating workforce scheduling. At the core of this project is a solution for the <a href="http://en.wikipedia.org/wiki/Nurse_scheduling_problem">nurse scheduling problem</a> written in <a href="http://julialang.org/">Julia</a>, which can schedule a workforce in under 1 minute of computation time. This tool is still in the early stages of development, please stay tuned for more details.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="header">
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="contact">
+            <ul>
+                <li>Twitter: <a href="https://twitter.com/andhess">andhess</a></li>
+                <li>Email: hello[at]andhess[dot]com</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        {% include copyright.html %}
+    </footer>
+</div>
