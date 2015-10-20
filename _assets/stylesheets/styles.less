@@ -41,7 +41,14 @@ a:hover {
 
 .about {
     padding: 0px 40px;
-    text-align: justify;
+
+    @media (min-width: @screen-sm-min) {
+        text-align: justify;
+    }
+
+    @media (max-width: @screen-xs-max) {
+        text-align: left;
+    }
 }
 .activities {
     .logo {
